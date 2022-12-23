@@ -1,0 +1,28 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.skills {
+    border-bottom: 1px solid $gray-300;
+
+    &__list {
+
+        li {
+           /*  border: none;
+            transform: translate(20%);
+            transition: 1s;
+            /* opacity: 0; */
+            /* text-decoration: solid underline 2px $primary!important;
+            color: $primary;
+            text-underline-offset: .5rem; */
+
+            &:nth-child(2n) {
+                /* text-align: end;
+                transform:translate(-20%);
+                text-decoration: solid underline 2px $main-light!important;
+                color: $main-light; */ 
+            }
+            
+        }
+        
+    } 
+}
