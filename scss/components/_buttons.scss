@@ -10,6 +10,12 @@
     border: 0.1rem solid rgba($white, 0.6) !important;
     background-color: $white;
     transition: 1s;
+    font-style: normal !important ;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0.4rem 3rem 0.4rem 0.5rem;
+    }
+    
 
     span {
       position: absolute;
@@ -43,6 +49,10 @@
   &-white-background {
     border: 0.1rem solid rgba($primary, 0.6) !important;
   }
+
+  &__project {
+    border: $main-dark solid 1px !important;
+  }
 }
 
 .hover-btn {
@@ -57,6 +67,10 @@
 .contact__link {
   font-size: 2.2rem;
   padding: 1.2rem;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+  }
 
   i {
     transition: 0.3s;

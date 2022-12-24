@@ -1,444 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="images/logo/Yana_Kovtun.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!-- Start the NAVBAR section -->
-    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/arts/logo-header.png" alt="logo LiyaKot" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div
-          class="collapse navbar-collapse justify-content-end nav_container"
-          id="navbarNav"
-        >
-          <ul class="nav nav-tabs nav_list">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link type="image/ico" sizes="32x32" rel="shortcut icon" href="/images/logo/favicon.ico">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start the NAVBAR section -->
+  <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo/logo.png" alt="logo Yana Kovtun" style="width: 40px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end nav_container" id="navbarNav">
+        <ul class="nav nav-tabs nav_list">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Start Intro Section -->
+  <section id="about" class="intro-section mb-5">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <div class="col-md-6 intros">
+          <div class="intro-heading mb-4">
+            <h1 class="display-2 mb-3">Hello!, I'm Yana Kovtun</h1>
+            <p class="h2 lh-base">Beginner Front-end Developer</p>
+          </div>
+          <a href="#projects" class="btn rounded-pill btn-rounded">See my works
+            <span>
+              <i class="fas fa-arrow-down"></i>
+            </span>
+          </a>
+        </div>
+        <div class="col-md-6 intros text-end">
+          <div class="intro-img">
+            <div class="ticker">
+              <img src="images/arts/ticker.png" alt="ticker" class="img-fluid" />
+            </div>
+            <img src="images/arts//intro-developer.png" alt="Developer is working" class="img-fluid" />
+          </div>
         </div>
       </div>
-    </nav>
-    <!-- Start Intro Section -->
-    <section id="about" class="intro-section mb-5">
-      <div class="container">
-        <div class="row align-items-center text-white">
-          <div class="col-md-6 intros">
-            <div class="intro-heading mb-4">
-              <h1 class="display-2 mb-3">Hello!, I'm Yana Kovtun</h1>
-              <p class="h2 lh-base">Beginner Front-end Developer</p>
-            </div>
-            <a href="#skills" class="btn rounded-pill btn-rounded"
-              >Read More
-              <span>
-                <i class="fas fa-arrow-down"></i>
-              </span>
-            </a>
+    </div>
+  </section>
+
+  <!--Start Projects Section -->
+  <section id="projects" class="projects pt-lg-3">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <h1 class="display-4">My Projects</h1>
+        <div class="heading-line"></div>
+      </div>
+
+      <div class="row pt-lg-5 pb-5">
+        <div id="carouselNetflix" class="carousel slide col-12 col-lg-6 order-lg-first order-last pt-5 pt-lg-0"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselNetflix" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselNetflix" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselNetflix" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="col-md-6 intros text-end">
-            <div class="intro-img">
-              <div class="ticker">
-                <img
-                  src="images/arts/ticker.png"
-                  alt="ticker"
-                  class="img-fluid"
-                />
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/images/projects/netflix/main.png" class="d-block w-100" alt="Netflix main page" />
+            </div>
+            <div class="carousel-item">
+              <img src="/images/projects/netflix/episodes.png" class="d-block w-100" alt="Episodes of the series" />
+            </div>
+            <div class="carousel-item">
+              <img src="/images/projects/netflix/all.png" class="d-block w-100" alt="List of all movies" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNetflix" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNetflix" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="col-12 col-lg-6 ps-lg-5 pt-3 pt-lg-0">
+          <h1 class="display-6 text-center fw-bold">Netflix</h1>
+          <div class="description h5 lh-base px-4 px-lg-2 mt-3 text-center text-md-start">
+            <p>
+              Updated Netflix is a test updated version of the well-known
+              site. I took the basic design from
+              <b>
+                <a href="https://www.behance.net/gallery/93925195/NETFLIX-REDESIGN-UXUI-Movies-TV-Series"
+                  target="_blank">here</a></b>.
+              This a desktop version of the site, designed for devices with a
+              width of 992px and more.
+            </p>
+            <p class="icons d-flex justify-content-center">
+              The project was created using: <span class="ms-2"> React <i class="fa-brands fa-react"></i></span> <span>
+                SCSS
+                <i class="fa-brands fa-sass"></i></span>
+            </p>
+            <div class="buttons pt-lg-3 pt-4">
+              <div>
+                <a href="https://netflix-redesignnn.netlify.app/" target="_blank"
+                  class="btn rounded-pill btn-rounded btn__project me-3">Visit Website
+                  <span>
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                </a>
               </div>
-              <img
-                src="images/arts//intro-developer.png"
-                alt="Developer is working"
-                class="img-fluid"
-              />
+              <div>
+                <a href="https://github.com/liyakot/Netflix-redesign" target="_blank"
+                  class="btn rounded-pill btn-rounded btn__project">See Code
+                  <span>
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Start Skills Section -->
-    <section id="skills" class="skills pt-4 pb-4 pb-md-5">
-      <div class="container">
-        <div class="row text-center">
-          <h1 class="display-4">My Skills</h1>
-          <div class="heading-line"></div>
-        </div>
-        <div class="row mb-3">
-          <div class="col-12 col-md-6">
-            <img src="images/arts/Coding.png" alt="Coding" class="img-fluid" />
-          </div>
-          <div class="col-12 col-md-6">
-            <h1 class="display-6 text-center mt-md-5 mb-4 fw-bold">
-              Hard Skills
-            </h1>
-            <ul class="list-group h5 h5__skills list-group-flush">
-              <li class="list-group-item">
-                Wide experience in <b>HTML5</b> and <b>CSS3</b>
-              </li>
-              <li class="list-group-item">
-                Cross-browser and responsive layout experience
-              </li>
-              <li class="list-group-item">
-                Experience with <b>Figma</b>
-              </li>
-              <li class="list-group-item">
-                Strong knowledge and experience with
-                <b>JavaScript(ES6+)</b>
-              </li>
-              <li class="list-group-item">Proficient with <b>SCSS</b></li>
-              <li class="list-group-item">
-                Understanding and practical application of
-                <b>Bootstrap 5</b>
-              </li>
-              <li class="list-group-item">Proficiency with <b>Git</b></li>
-              <li class="list-group-item">
-                Experience with <b>ReactJS</b>
-              </li>
-            </ul>
+      <div class="row mt-lg-5 pt-lg-4 pb-5">
+
+        <div class="col-12 col-lg-6 pe-lg-5 pt-4 pt-lg-0">
+          <h1 class="display-6 text-center fw-bold">AIM-Game</h1>
+          <div class="description h5 lh-base px-4 px-lg-2 mt-3 text-center text-md-start">
+            <p>
+              The game is essentially a test of reflexes and speed. The essence of the game is to hit the circle that
+              appears in different corners of the board.
+            </p>
+            <p class="icons d-flex justify-content-center">
+              The project was created using: <span class="ms-2"> JavaScript <i class="fa-brands fa-js"></i></span>
+              <span>
+                CSS3
+                <i class="fa-brands fa-css3-alt"></i></span>
+            </p>
+            <div class="buttons pt-4 pt-lg-3">
+              <div>
+                <a href="https://aimgame8.netlify.app/" target="_blank"
+                  class="btn rounded-pill btn-rounded btn__project me-3">Visit Website
+                  <span>
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/liyakot/AIM-Game" target="_blank"
+                  class="btn rounded-pill btn-rounded btn__project">See Code
+                  <span>
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-6 mt-5 mb-5">
-            <h1 class="display-6 text-center mb-4 fw-bold">Soft Skills</h1>
-            <ul class="list-group skills__list h5 h5__skills list-group-flush">
-              <li class="list-group-item h5">TeamWork</li>
-              <li class="list-group-item h5">
-                Good problem-solving skills with analytical abilities
-              </li>
-              <li class="list-group-item h5">Critical thinking</li>
-              <li class="list-group-item h5">Creativity</li>
-              <li class="list-group-item h5">Attention to detail</li>
-              <li class="list-group-item h5">Level of English Intermediate+</li>
-            </ul>
+        <div id="carouselAim-game" class="carousel slide col-12 col-lg-6 pt-5 pt-lg-0" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselAim-game" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselAim-game" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselAim-game" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="col-12 col-md-6">
-            <img
-              src="images/arts/Teamwork.png"
-              alt="Teamwork"
-              class="img-fluid"
-            />
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/images/projects/aim-game/main.png" class="d-block w-100" alt="Netflix main page" />
+            </div>
+            <div class="carousel-item">
+              <img src="/images/projects/aim-game/board.png" class="d-block w-100" alt="Episodes of the series" />
+            </div>
+            <div class="carousel-item">
+              <img src="/images/projects/aim-game/score.png" class="d-block w-100" alt="List of all movies" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselAim-game" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselAim-game" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-lg-5 pt-lg-4">
+        <div id="carouselFlipper" class="carousel slide col-12 col-lg-6 order-lg-first order-last pt-5 pt-lg-0"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselFlipper" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselFlipper" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselFlipper" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/images/projects/flipper/main.png" class="d-block w-100" alt="Netflix main page" />
+            </div>
+            <div class="carousel-item">
+              <img src="/images/projects/flipper/rgb.png" class="d-block w-100" alt="Episodes of the series" />
+            </div>
+            <div class="carousel-item">
+              <img src="/images/projects/flipper/hex.png" class="d-block w-100" alt="List of all movies" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFlipper" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselFlipper" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="col-12 col-lg-6 ps-lg-5 pt-3 pt-lg-0">
+          <h1 class="display-6 text-center fw-bold">Color-Flipper</h1>
+          <div class="description h5 lh-base px-4 px-lg-2 mt-3 text-center text-md-start">
+            <p>
+              The essence of the game is to switch the background color using a button. There are also buttons in the
+              navbar that switch the color format: rgb or hex.
+              I took the idea and design from the <b>
+                <a href="https://www.youtube.com/watch?v=3PHXvlpOkf4&feature=youtu.be" target="_blank">video</a></b>
+              from freeCodeCamp, but the logic of the project is completely
+              mine.
+            </p>
+            <p class="icons d-flex justify-content-center">
+              The project was created using: <span class="ms-2"> JavaScript <i class="fa-brands fa-js"></i></span>
+              <span>
+                CSS3
+                <i class="fa-brands fa-css3-alt"></i></span>
+            </p>
+            <div class="buttons pt-4 pt-lg-0 pt-xl-3">
+              <div>
+                <a href="https://color-flipperrr.netlify.app/" target="_blank"
+                  class="btn rounded-pill btn-rounded btn__project me-3">Visit Website
+                  <span>
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/liyakot/Color-Flipper" target="_blank"
+                  class="btn rounded-pill btn-rounded btn__project">See Code
+                  <span>
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!--Start Projects Section -->
-    <section id="projects" class="projects pt-5">
-      <div class="container">
-        <div class="row text-center mb-5">
-          <h1 class="display-4">My Projects</h1>
-          <div class="heading-line"></div>
-        </div>
-        <div class="row mt-5 pt-4">
-          <div class="col-12 col-md-6 col-xl-4 text-center">
-            <figure class="project" id="project">
-              <img
-                src="images/projects/aim-game.png"
-                class="figure-img img-fluid project__image"
-                alt="First Project"
-                id="img-project"
-              />
-              <figcaption class="project__caption text-center">
-                <p class="h5 h5__caption">
-                  Test your accuracy with a simple game <br /><small
-                    class="text-muted"
-                    ><i>(JavaScript)</i></small
-                  >
-                </p>
-                <div class="buttons">
-                  <div class="live">
-                    <a
-                      href="https://aimgame8.netlify.app/"
-                      target="_blank"
-                      class="btn rounded-pill btn-rounded"
-                      >Live
-                      <span>
-                        <i class="fas fa-arrow-right"></i>
-                      </span>
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href="https://github.com/liyakot/AIM-Game"
-                      target="_blank"
-                      class="btn rounded-pill btn-rounded"
-                      >Code
-                      <span>
-                        <i class="fas fa-arrow-right"></i>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </figcaption>
-              <div class="project__overlay"></div>
-            </figure>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4 text-center">
-            <figure class="project" id="project">
-              <img
-                src="images/projects/aim-game.png"
-                class="figure-img img-fluid project__image"
-                alt="Second Project"
-                id="img-project"
-              />
-              <figcaption class="project__caption text-center">
-                <p class="h5 h5__caption">
-                  Test your accuracy with a simple game <br /><small
-                    class="text-muted"
-                    ><i>(Native JS)</i></small
-                  >
-                </p>
-                <div>
-                  <a
-                    href="https://aimgame8.netlify.app/"
-                    target="_blank"
-                    class="btn rounded-pill btn-rounded"
-                    >Visit Website
-                    <span>
-                      <i class="fas fa-arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </figcaption>
-              <div class="project__overlay"></div>
-            </figure>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4 text-center">
-            <figure class="project" id="project">
-              <img
-                src="images/projects/aim-game.png"
-                class="figure-img img-fluid project__image"
-                alt="First Project"
-                id="img-project"
-              />
-              <figcaption class="project__caption text-center">
-                <p class="h5 h5__caption">
-                  Test your accuracy with a simple game <br /><small
-                    class="text-muted"
-                    ><i>(Native JS)</i></small
-                  >
-                </p>
-                <div>
-                  <a
-                    href="https://aimgame8.netlify.app/"
-                    target="_blank"
-                    class="btn rounded-pill btn-rounded"
-                    >Visit Website
-                    <span>
-                      <i class="fas fa-arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </figcaption>
-              <div class="project__overlay"></div>
-            </figure>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4 text-center">
-            <figure class="project" id="project">
-              <img
-                src="images/projects/aim-game.png"
-                class="figure-img img-fluid project__image"
-                alt="First Project"
-                id="img-project"
-              />
-              <figcaption class="project__caption text-center">
-                <p class="h5 h5__caption">
-                  Test your accuracy with a simple game <br /><small
-                    class="text-muted"
-                    ><i>(Native JS)</i></small
-                  >
-                </p>
-                <div>
-                  <a
-                    href="https://aimgame8.netlify.app/"
-                    target="_blank"
-                    class="btn rounded-pill btn-rounded"
-                    >Visit Website
-                    <span>
-                      <i class="fas fa-arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </figcaption>
-              <div class="project__overlay"></div>
-            </figure>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4 text-center">
-            <figure class="project" id="project">
-              <img
-                src="images/projects/aim-game.png"
-                class="figure-img img-fluid project__image"
-                alt="First Project"
-                id="img-project"
-              />
-              <figcaption class="project__caption text-center">
-                <p class="h5 h5__caption">
-                  Test your accuracy with a simple game <br /><small
-                    class="text-muted"
-                    ><i>(Native JS)</i></small
-                  >
-                </p>
-                <div>
-                  <a
-                    href="https://aimgame8.netlify.app/"
-                    target="_blank"
-                    class="btn rounded-pill btn-rounded"
-                    >Visit Website
-                    <span>
-                      <i class="fas fa-arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </figcaption>
-              <div class="project__overlay"></div>
-            </figure>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4 text-center">
-            <figure class="project" id="project">
-              <img
-                src="images/projects/aim-game.png"
-                class="figure-img img-fluid project__image"
-                alt="First Project"
-                id="img-project"
-              />
-              <figcaption class="project__caption text-center">
-                <p class="h5 h5__caption">
-                  Test your accuracy with a simple game <br /><small
-                    class="text-muted"
-                    ><i>(Native JS)</i></small
-                  >
-                </p>
-                <div>
-                  <a
-                    href="https://aimgame8.netlify.app/"
-                    target="_blank"
-                    class="btn rounded-pill btn-rounded"
-                    >Visit Website
-                    <span>
-                      <i class="fas fa-arrow-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </figcaption>
-              <div class="project__overlay"></div>
-            </figure>
-          </div>
-          <div class="col-12 mt-5 pt-3 text-center">
-            <a
-              href="https://github.com/liyakot?tab=repositories"
-              target="_blank"
-              class="btn rounded-pill btn-rounded btn-white-background"
-              >See more on GitHub
-              <span>
-                <i class="fa-brands fa-github"></i>
-              </span>
-            </a>
-          </div>
+      <div class="col-12 mt-5 pt-5 text-center">
+        <a href="https://github.com/liyakot?tab=repositories" target="_blank"
+          class="btn rounded-pill btn-rounded btn-white-background">See more on GitHub
+          <span>
+            <i class="fa-brands fa-github"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Start Footer Section -->
+  <section id="contact" class="contact">
+    <div class="container pt-5 pb-5 pb-xl-1">
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#home">
+            <img src="images/logo/logo.png" alt="Logo" class="img-fluid" style="width: 70px" />
+          </a>
         </div>
       </div>
-    </section>
-
-    <!-- Start Footer Section -->
-    <section id="contact" class="contact">
-      <div class="container pt-5 pb-5 pb-xl-1">
-        <div class="row">
-          <div class="col-12 text-center">
-            <a href="#home">
-              <img
-                src="images/arts/logo-footer.png"
-                alt="Logo"
-                class="img-fluid"
-              />
-            </a>
-          </div>
+      <div class="row row-cols-auto justify-content-center mt-4">
+        <div class="col contact__link">
+          <a href="https://codepen.io/YanaKovtun" target="_blank" class="">
+            <span>
+              <i class="fa-brands fa-codepen"></i>
+            </span>
+          </a>
         </div>
-        <div class="row row-cols-auto justify-content-center mt-4 mt-md-5">
-          <div class="col contact__link">
-            <a href="https://codepen.io/YanaKovtun" target="_blank" class="">
-              <span>
-                <i class="fa-brands fa-codepen"></i>
-              </span>
-            </a>
-          </div>
-          <div class="col contact__link">
-            <a href="https://github.com/liyakot" target="_blank" class="">
-              <span>
-                <i class="fa-brands fa-github"></i>
-              </span>
-            </a>
-          </div>
-          <div class="col contact__link">
-            <a
-              href="https://www.instagram.com/janakovtun/"
-              target="_blank"
-              class=""
-            >
-              <span>
-                <i class="fa-brands fa-instagram"></i>
-              </span>
-            </a>
-          </div>
-          <div class="col contact__link">
-            <a
-              href="https://www.linkedin.com/in/yana-kovtun-7bbb70252/"
-              target="_blank"
-              class=""
-            >
-              <span>
-                <i class="fa-brands fa-linkedin-in"></i>
-              </span>
-            </a>
-          </div>
-          <div class="col contact__link">
-            <a href="mailto:janakovtun2002@gmail.com" target="_blank" class="">
-              <span>
-                <i class="fa-regular fa-envelope"></i>
-              </span>
-            </a>
-          </div>
+        <div class="col contact__link">
+          <a href="https://github.com/liyakot" target="_blank" class="">
+            <span>
+              <i class="fa-brands fa-github"></i>
+            </span>
+          </a>
+        </div>
+        <div class="col contact__link">
+          <a href="https://www.instagram.com/janakovtun/" target="_blank" class="">
+            <span>
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </a>
+        </div>
+        <div class="col contact__link">
+          <a href="https://www.linkedin.com/in/yana-kovtun-7bbb70252/" target="_blank" class="">
+            <span>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </span>
+          </a>
+        </div>
+        <div class="col contact__link">
+          <a href="mailto:janakovtun2002@gmail.com" target="_blank" class="">
+            <span>
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="/assets/js/script.js"></script>
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

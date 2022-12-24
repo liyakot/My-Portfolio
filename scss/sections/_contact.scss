@@ -1,16 +1,16 @@
-@use '../custom' as *;
-@use '../components/mixins' as *;
+@use "../custom" as *;
+@use "../components/mixins" as *;
 
 .contact {
-    @include gradient;
-    margin-top: 7rem;
-    padding-top: 2rem;
+  @include gradient;
+  margin-top: 7rem;
+  padding-top: 2rem;
 
-    @include media-breakpoint-up(lg) {
-        height: 40vh;
-    }
+  @include media-breakpoint-up(lg) {
+    height: 40vh;
+  }
 
-    @include media-breakpoint-up(xl) {
-        height: 50vh;
-    }
+  @include media-breakpoint-up(xl) {
+    height: 50vh;
+  }
 }

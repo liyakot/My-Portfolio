@@ -6,17 +6,12 @@ body {
   color: $primary;
 }
 
-//Introduction
-.intro-heading {
-  .h2 {
-    font-style: italic;
-  }
-}
+.h2 {
+  font-style: italic;
 
-//Skills
-.display-4 {
-  font-weight: 700;
-  margin-top: 2rem;
+  @include media-breakpoint-down(xl) {
+    font-size: 1.3rem;
+  }
 }
 
 //Heading Line
@@ -38,32 +33,27 @@ body {
   background-color: $main-light;
 }
 
-//Skills + Projects
+//Projects
+.display-4 {
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
 .display-6 {
   font-weight: 500;
   color: $secondary;
   font-style: italic;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 1.7rem;
+  }
 }
 
 .h5 {
   font-weight: 400;
+  font-style: italic;
 
-  &__skills {
-    font-style: italic;
-  }
-
-  &__caption {
-    font-weight: 500;
-    font-style: italic;
-    color: $white;
-    padding-bottom: 1rem;
-
-    @include media-breakpoint-down(md) {
-      font-size: 1.5rem;
-    }
-
-    @include media-breakpoint-down(sm) {
-      font-size: 5vw;
-    }
+  @include media-breakpoint-down(xl) {
+    font-size: 1.1rem;
   }
 }
